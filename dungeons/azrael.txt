@@ -1,0 +1,142 @@
+
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/landing_page.png]
+[IMG=d:/ymir work/ui/wiki/special_elements/info_dung.png; Y=2; X=5]
+[IMG=d:/ymir work/ui/wiki/special_elements/chenar_main.png; Y=2; X=292]
+[model_render=2598; width=203; height=145; Y=24; X=336;]
+[IMG=d:/ymir work/ui/wiki/special_elements/drop_dungeon.png; Y=24; X=294]
+[IMG=d:/ymir work/ui/wiki/special_elements/arrow_right.png; Y=85; X=327]
+[X=110+15;Y=5]Informatii
+[X=400;Y=5]Boss Render
+[X=59-12;Y=34]Catacomba Diavolului
+[X=188;Y=34]25m
+[X=260;Y=34]75
+[X=56-9;Y=82 ]Min. 16.250*
+[X=115-7;Y=82]Min. 16.700*
+[X=178-9;Y=82]Min. 16.100*
+[X=238-7;Y=82]Min. 19.000*
+[X=56;Y=119;COLOR=0x00FF00]-
+[X=115;Y=119;COLOR=0x00FF00]-
+[X=178;Y=119;COLOR=0x00FF00]-
+[X=238;Y=119;COLOR=0x00FF00]-
+[X=56;Y=151;COLOR=0xFFFF00]Vampir
+[X=198;Y=151;COLOR=0xBF40BF]Intuneric
+[item_vnum=30320; Y=26; X=9]
+[item_vnum=30320; Y=26; X=9]
+[item_vnum=299; Y=183; X=22; metinsocket=(28437, 28431, 0, 0); attrslot=((72, 45), (71, -14), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=11299; Y=210; X=57; metinsocket=(28438, 28440, 0, 0); attrslot=((1, 2000), (53, 50), (23, 10), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=12269; Y=177; X=58; attrslot=((7, 8), (21, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=15089; Y=323; X=58; attrslot=((1, 2000), (15, 10), (7, 8), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=44799; Y=210; X=93; attrslot=((48, 1), (5, 12), (21, 20), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=44759; Y=246; X=90; attrslot=((1, 2000), (45, 20), (21, 20), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=44779; Y=210; X=126; attrslot=((21, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=44769; Y=246; X=126; attrslot=((1, 2000), (15, 10), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=18009; Y=284; X=58;metinsocket=(0,0,0,0);]
+[item_vnum=79894; Y=202; X=209]
+[item_vnum=79903 ; Y=234; X=209]
+[item_vnum=79754; Y=202; X=170]
+[item_vnum=79755; Y=235; X=170]
+[item_vnum=79756; Y=271; X=170]
+[item_vnum=79861;X=298;Y=28]
+[item_vnum=49877;X=299;Y=62]
+[item_vnum=55407;X=299;Y=96]
+[item_vnum=30614;X=299;Y=130]
+[item_vnum=79900; Y=202; X=247]
+[item_vnum=79901; Y=234; X=247]
+[item_vnum=79902; Y=268; X=247]
+
+[IMG=d:/ymir work/ui/wiki/special_elements/chenar_main_alchemy.png; Y=169; X=292]
+[item_vnum=40143; Y=202+13; X=315+67]
+[item_vnum=44782; Y=234+1; X=315+102]
+[item_vnum=44784; Y=202+1; X=315+102]
+[item_vnum=44781; Y=271+31; X=315+51]
+[item_vnum=44787; Y=271+31; X=315+86]
+[item_vnum=44788; Y=271+31; X=315+120]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+20; X=-2]
+[Y=388+20; X=245]|BConsumabile|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+20; X=-2]
+[item_vnum=50821;X=10;Y=409+20]
+[item_vnum=50822;X=10+45;Y=409+20]
+[item_vnum=50823;X=10+90;Y=409+20]
+[item_vnum=50824;X=10+135;Y=409+20]
+[item_vnum=50825;X=10+180;Y=409+20]
+[item_vnum=44810;X=10+225;Y=409+20]
+[item_vnum=44812;X=10+270;Y=409+20]
+[item_vnum=44717;X=10+315;Y=409+20]
+[item_vnum=44718;X=10+350;Y=409+20]
+[item_vnum=44719;X=10+395;Y=409+20]
+[item_vnum=44720;X=10+440;Y=409+20]
+[item_vnum=44721;X=10+485;Y=409+20]
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+100; X=-2]
+[Y=388+100; X=225]|BSistemul de Abilitati|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+100; X=-2]
+[IMG=d:/ymir work/ui/wiki/skill/auraP.png; Y=409+100; X=30]
+[IMG=d:/ymir work/ui/wiki/skill/iuresP.png; Y=409+100; X=30+75]
+[IMG=d:/ymir work/ui/wiki/skill/taisP.png; Y=409+100; X=30+150]
+[IMG=d:/ymir work/ui/wiki/skill/armuraP.png; Y=409+100; X=30+225]
+[IMG=d:/ymir work/ui/wiki/skill/binecuvP.png; Y=409+100; X=30+300]
+[IMG=d:/ymir work/ui/wiki/skill/ajutorP.png; Y=409+100; X=30+375]
+[IMG=d:/ymir work/ui/wiki/skill/atacP.png; Y=409+100; X=30+450]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+180; X=-2]
+[Y=388+180; X=226]|BMisiunile Biologului|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+180; X=-2]
+[item_vnum=30006;item_count= 10; Y=409+180; X=75+20]
+[item_vnum=30047;item_count= 15; Y=409+180; X=150+20]
+[item_vnum=30015;item_count= 20; Y=409+180; X=225+20]
+[item_vnum=30050;item_count= 25; Y=409+180; X=300+20]
+[item_vnum=30165;item_count= 35; Y=409+180; X=375+20]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Subtitle.png; Y=250+395; X=0]
+[Y=250+396; X=84;FONT_SIZE=18]|BStagiile temnitei|b
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=250+455; X=3]
+[Y=250+463; X=20; FONT_SIZE=20] Stagiul I
+[Y=250+497; X=17]* Gaseste si distruge cele 2 |Bpietre metin|b corecte!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=250+590; X=3]
+[Y=250+598; X=20; FONT_SIZE=20] Stagiul II
+[Y=250+632; X=17]* Invinge toti |Bmonstrii|b pentru a continua!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=250+725; X=3]
+[Y=250+733; X=20; FONT_SIZE=20] Stagiul III
+[Y=250+767; X=17]* Invinge-l pe |BCharon|b pentru a avansa!
+[Y=250+777+5; X=17]* Distruge toate |Bpietrele metin|b si deblocheaza |Bstatuia|b!
+[Y=250+787+10; X=17]* Apasa click dreapta pe |BCheia Suflet Cristalizat|b pentru a distruge sigiliul lui |BAzrael|b!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=250+860; X=3]
+[Y=250+868; X=20; FONT_SIZE=20] Stagiul IV
+[Y=250+902; X=17]* Sigiliul lui |BAzrael|b a fost distrus!
+[Y=250+917; X=17]* Invige-l pe|BAzrael|b pentru a finaliza teminta!
+
+[scrollBoardSize; height=1210]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

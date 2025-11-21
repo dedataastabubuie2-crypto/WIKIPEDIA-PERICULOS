@@ -1,0 +1,126 @@
+
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/landing_page.png]
+[IMG=d:/ymir work/ui/wiki/special_elements/info_dung.png; Y=2; X=5]
+[IMG=d:/ymir work/ui/wiki/special_elements/chenar_main.png; Y=2; X=292]
+[model_render=2092; width=203; height=145; Y=24; X=336;]
+[IMG=d:/ymir work/ui/wiki/special_elements/drop_dungeon.png; Y=24; X=294]
+[IMG=d:/ymir work/ui/wiki/special_elements/arrow_right.png; Y=85; X=327]
+[X=110+15;Y=5]Informatii
+[X=400;Y=5]Boss Render
+[X=65-12;Y=34]Cuibul Baronesei
+[X=188;Y=34]20m
+[X=260;Y=34]60
+[X=56-9;Y=82 ]Min. 2.500* 
+[X=115-7;Y=82]Min. 2.800* 
+[X=178-9;Y=82]Min. 2.500* 
+[X=238-7;Y=82]Min. 2.700* 
+[X=56;Y=119;COLOR=0x00FF00]-
+[X=115;Y=119;COLOR=0x00FF00]-
+[X=178;Y=119;COLOR=0x00FF00]-
+[X=238;Y=119;COLOR=0x00FF00]-
+[X=56;Y=151;COLOR=0xFFFF00] -
+[X=198;Y=151;COLOR=0xFF0000]Foc
+[item_vnum=71130; Y=26; X=9]
+[item_vnum=299; Y=183; X=22;metinsocket=(28337, 28331, 0, 0); attrslot=((72, 35), (71, -14), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=11259; Y=210; X=61; metinsocket=(28340, 0, 0, 0); attrslot=((1, 2000), (53, 50), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=12249; Y=177; X=58; attrslot=((7, 8), (35, 15), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=15029; Y=323; X=58; attrslot=((1, 2000), (15, 10), (7, 8), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=13049; Y=210; X=93; attrslot=((48, 1), (5, 12), (4, 12), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=14069; Y=246; X=90; attrslot=((23, 10), (45, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=17109; Y=210; X=126; attrslot=((45, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=16149; Y=246; X=126; attrslot=((1, 2000), (15, 10), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=79815; Y=202; X=209]
+[item_vnum=43746 ; Y=234; X=209]
+[item_vnum=79754; Y=202; X=170]
+[item_vnum=79755; Y=235; X=170]
+[item_vnum=79756; Y=271; X=170]
+[item_vnum=79858;X=298;Y=28]
+[item_vnum=30171;X=299;Y=62]
+[item_vnum=30059;X=299;Y=96]
+[item_vnum=55003;X=299;Y=130]
+
+[IMG=d:/ymir work/ui/wiki/special_elements/chenar_main_alchemy.png; Y=169; X=292]
+[item_vnum=40143; Y=202+13; X=315+67]
+[item_vnum=44782; Y=234+1; X=315+102]
+[item_vnum=44784; Y=202+1; X=315+102]
+[item_vnum=44781; Y=271+31; X=315+51]
+[item_vnum=44787; Y=271+31; X=315+86]
+[item_vnum=44788; Y=271+31; X=315+120]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+20; X=-2]
+[Y=388+20; X=245]|BConsumabile|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+20; X=-2]
+[item_vnum=50821;X=40;Y=409+20]
+[item_vnum=50822;X=40+70;Y=409+20]
+[item_vnum=50823;X=40+140;Y=409+20]
+[item_vnum=50824;X=40+210;Y=409+20]
+[item_vnum=50825;X=40+280;Y=409+20]
+[item_vnum=79838;X=40+350;Y=409+20]
+[item_vnum=79839;X=40+420;Y=409+20]
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+100; X=-2]
+[Y=388+100; X=225]|BSistemul de Abilitati|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+100; X=-2]
+[IMG=d:/ymir work/ui/wiki/skill/auraM.png; Y=409+100; X=100]
+[IMG=d:/ymir work/ui/wiki/skill/iuresM.png; Y=409+100; X=200]
+[IMG=d:/ymir work/ui/wiki/skill/taisM.png; Y=409+100; X=300]
+[IMG=d:/ymir work/ui/wiki/skill/armuraM.png; Y=409+100; X=400]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+180; X=-2]
+[Y=388+180; X=226]|BMisiunile Biologului|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+180; X=-2]
+[item_vnum=30006;item_count= 10;X=250;Y=409+180]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Subtitle.png; Y=250+395; X=0]
+[Y=250+396; X=84;FONT_SIZE=18]|BStagiile temnitei|b
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=250+455; X=3]
+[Y=250+463; X=20; FONT_SIZE=20] Stagiul I
+[Y=250+497; X=17]* Invinge |BVaduva Neagra|b pentru a primi |BFluierul Arahnidelor|b!
+[Y=250+507; X=17]* Apasa click dreapta pe |BAFluierul Arahnidelor|b pentru a atrage afara |BRegina Baroneasa|b!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=250+590; X=3]
+[Y=250+598; X=20; FONT_SIZE=20] Stagiul II
+[Y=250+632; X=17]* Trebuie sa slabesti |BRegina Baroneasa|b pana la |B75%|b!
+[Y=250+642; X=17]* |BRegina Baroneasa|b se ascunde si cheama un val de |Bmonstrii|b, invange-i pentru a avansa!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=250+725; X=3]
+[Y=250+733; X=20; FONT_SIZE=20] Stagiul III
+[Y=250+767; X=17]* Trebuie sa slabesti |BRegina Baroneasa|r pana la |B50%|b!
+[Y=250+777; X=17]* |BRegina Baroneasa|r se ascunde si isi aseaza |Bouale|b, distrugele inainte de a ecloza!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=250+860; X=3]
+[Y=868+250; X=20; FONT_SIZE=20] Stagiul IV
+[Y=902+250; X=17]* Trebuie sa slabesti |BRegina Baroneasa|r pana la |B25%|b!
+[Y=912+250; X=17]* |BRegina Baroneasa|b se ascunde si cheama un val de |Bmonstrii|b, invange-i pentru a avansa!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=995+250; X=3]
+[Y=1003+250; X=20; FONT_SIZE=20] Stagiul V 
+[Y=1037+250; X=17]* Magia |BReginei Baroneasa|b a fost distrusa, invinge-o acum pentru a finaliza temnita!
+
+[scrollBoardSize; height=1360]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/landing_page.png]
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Header.png; Y=5; X=12]
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Subtitle.png; Y=13+30; X=14+15]
+[Y=18+7; X=44+166; FONT_SIZE=18] |BBasic Keybinds|b
+[X=170;Y=50]|BHere you can find the all the keybinds!|b
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=91; X=12]
+[X=167;Y=98;FONT_SIZE=15]Opens the Switchbot 
+[IMG=icon/emoji/key_f5.tga; Y=96+2; X=65]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=121; X=12]
+[X=167;Y=128;FONT_SIZE=15]Opens the Dungeon Info interface
+[IMG=icon/emoji/key_f6.tga; Y=126+2; X=65]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=151; X=12]
+[X=167;Y=158;FONT_SIZE=15]Opens the Biologist Quests and Shop
+[IMG=icon/emoji/key_f7.tga; Y=156+2; X=65]
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=151+30; X=12]
+[X=167;Y=158+30;FONT_SIZE=15]Opens Statistics window
+[IMG=icon/emoji/key_f8.tga; Y=156+2+30; X=65]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=181+30; X=12]
+[X=167;Y=188+30;FONT_SIZE=15]Opens the Wikipedia
+[IMG=icon/emoji/key_h.tga; Y=186+2+30; X=66]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=211+30; X=12]
+[X=167;Y=218+30;FONT_SIZE=15]Sets 10 Statuspoints at once
+[IMG=icon/emoji/key_ctrl.tga; Y=216+2+30; X=40]
+[IMG=icon/emoji/key_lclick.tga; Y=216+30; X=89]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=241+30; X=12]
+[X=167;Y=248+30;FONT_SIZE=15]To mount and unmount your mount 
+[IMG=icon/emoji/key_ctrl.tga; Y=246+2+30; X=40]
+[IMG=icon/emoji/key_g.tga; Y=246+2+30; X=89]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=271+30; X=12]
+[X=167;Y=278+30;FONT_SIZE=15]Enables or disables all systems of execution 
+[IMG=icon/emoji/key_ctrl.tga; Y=276+2+30; X=40]
+[IMG=icon/emoji/key_e.tga; Y=276+2+30; X=89]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=301+30; X=12]
+[X=167;Y=308+30;FONT_SIZE=15]Moves the Item faster into Storage, Tradewindow and Shop
+[IMG=icon/emoji/key_ctrl.tga; Y=306+2+30; X=40]
+[IMG=icon/emoji/key_lclick.tga; Y=306+30; X=89]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=331+30; X=12]
+[X=167;Y=338+30;FONT_SIZE=15]Open X pieces of the selected Chest
+[IMG=icon/emoji/key_ctrl.tga; Y=336+2+30; X=40]
+[IMG=icon/emoji/key_rclick.tga; Y=336+30; X=89]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=361+30; X=12]
+[X=167;Y=368+30;FONT_SIZE=15]Searches immediately for the selected item
+[IMG=icon/emoji/key_ctrl.tga; Y=366+2+30; X=20]
+[IMG=icon/emoji/key_alt.tga; Y=366+2+30; X=66]
+[IMG=icon/emoji/key_rclick.tga; Y=366+30; X=110]
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=391+30; X=12]
+[X=167;Y=398+30;FONT_SIZE=15]Searches the item in wiki
+[IMG=icon/emoji/key_ctrl.tga; Y=396+2+30; X=20]
+[IMG=icon/emoji/key_shift.tga; Y=396+2+30; X=66]
+[IMG=icon/emoji/key_lclick.tga; Y=396+30; X=110]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=391+60; X=12]
+[X=167;Y=398+60;FONT_SIZE=15]Opens the Auto Hunt interface
+[IMG=icon/emoji/key_ctrl.tga; Y=396+2+60; X=40]
+[IMG=icon/emoji/key_k.tga; Y=396+2+60; X=89]
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=391+90; X=12]
+[X=167;Y=398+90;FONT_SIZE=15]Opens the preview page
+[IMG=icon/emoji/key_alt.tga; Y=396+2+90; X=40]
+[IMG=icon/emoji/key_rclick.tga; Y=396+90; X=89]
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=391+120; X=12]
+[X=167;Y=398+120;FONT_SIZE=15]Sells the selected items
+[IMG=icon/emoji/key_tab.tga; Y=396+2+120; X=40]
+[IMG=icon/emoji/key_lclick.tga; Y=396+2+120; X=89]
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=391+150; X=12]
+[X=167;Y=398+150;FONT_SIZE=15]Add up to 6 metinstones in attack queue
+[IMG=icon/emoji/key_shift.tga; Y=396+2+150; X=40]
+[IMG=icon/emoji/key_rclick.tga; Y=396+150; X=89]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=421+150; X=12]
+[X=167;Y=428+150;FONT_SIZE=15]Opens the storage
+[IMG=icon/emoji/key_u.tga; Y=426+2+150; X=66]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=451+150; X=12]
+[X=167;Y=458+150;FONT_SIZE=15]Opens the search shop
+[IMG=icon/emoji/key_j.tga; Y=456+2+150; X=66]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=481+150; X=12]
+[X=167;Y=488+150;FONT_SIZE=15]Opens the offline shop
+[IMG=icon/emoji/key_k.tga; Y=486+2+150; X=66]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=511+150; X=12]
+[X=167;Y=518+150;FONT_SIZE=15]Opens the menu for pet companion
+[IMG=icon/emoji/key_p.tga; Y=516+2+150; X=66]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=541+150; X=12]
+[X=167;Y=548+150;FONT_SIZE=15]Opens the alchemy page
+[IMG=icon/emoji/key_o.tga; Y=546+2+150; X=66]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=601+120; X=12]
+[X=167;Y=608+120;FONT_SIZE=15]Opens the inventory
+[IMG=icon/emoji/key_i.tga; Y=606+2+120; X=66]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/base_line2.png; Y=631+120; X=12]
+[X=167;Y=638+120;FONT_SIZE=15]Opens the map
+[IMG=icon/emoji/key_m.tga; Y=636+2+120; X=66]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Footer.png; Y=800-10; X=12]
+[scrollboardsize; height = 820]
+
+

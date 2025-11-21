@@ -1,0 +1,68 @@
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Header.png; Y=5; X=12]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=14+55]
+[Y=18+20; X=44+55; FONT_SIZE=18] |BGeneral|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=260+20]
+[Y=18+20; X=290+20; FONT_SIZE=18] |BSchimbare Nume|b
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Subtitle.png; X=6;Y=80]
+[Y=75+8; X=78; FONT_SIZE=18] |BGeneral|b
+
+
+[IMG=d:/ymir work/ui/wiki/guides/systems/Buffi_First.png; Y=40+90; X=9]
+[item_vnum=43734;Y=89+90;X=36]
+[Y=40+90+6;X= 101]* Sigiliul Buffi poate fi achizitionat din |cfff2a35aItemshop|r, fie din |cff2b6e0eGaya|r.
+[Y=56+90+6;X= 101]* Bonusul de INT al Buffi-ului pot fi vazute in descrierea acestuia.
+[Y=72+90+6;X= 101]* Obiectele pentru evolutia skill-urilor se achizitioneaza din Cartea Abilitatilor.
+[Y=88+90+6;X= 101]* Poti schimba sexul Buffi-ului tau folosind Vraja Schimbarii (Buffi).
+[Y=104+90+6;X= 101]* Pentru evolutia skill-urilor de la M1 la G1 aveti nevoie de Carte Maestru Buffi.
+[Y=120+6+90;X= 101]* Pentru evolutia skill-urilor de la G1 la P aveti Piatra Maestru Buffi.
+[Y=136+6+90;X= 101]* |cffdb6f1dAtentie: Trebuie sa ai prima oara G1 pentru a putea evolua skill-urile spre P!|r
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle1.png; X=469;Y=24+85]
+[item_vnum=30132; Y=52+80; X=485]
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle1.png; X=469;Y=37+100-15+75-40]
+[item_vnum=44256; Y=52+90+77-40; X=485]
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle1.png; X=469;Y=37+200-30+57-60]
+[item_vnum=44257; Y=56+200-30+62-60; X=488]
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Element.png; Y=268; X=3]
+[Y=268 + 20; X=92; FONT_SIZE=18] |BSchimbare Nume|b
+[IMG=d:/ymir work/ui/wiki/guides/systems/Buffi_Nickname.png; Y=210+100; X=440]
+[item_vnum=43760;Y=87+170+100;X=469]
+
+[Y=210+115+6;X= 26]* Schimbarea Numelui va debloca buff-urile de Leac pentru Buffi-ul tau.
+[Y=226+115+6;X= 26]* La fel ca si Sigiliul Buffi, si Schimbarea Nume are o versiune |cfff2a35aItemshop|r si |cff2b6e0eGaya|r.
+[Y=242+115+6;X= 26]* Schimbarea Nume Buffi este legata de caracterul tau, nu de Sigiliu.
+[Y=258+115+6;X= 26]* Negocierea sau vinderea Buffi-uli tau nu va pierde Numele Buffi-ului!
+[Y=274+115+6;X= 26]* Schimbarea de nume nu va creste valoarea INT a acesteia.
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Element.png; Y=542-120; X=3]
+[Y=548 + 14-120; X=112; FONT_SIZE=18] |BBonus Set|b
+[IMG=d:/ymir work/ui/wiki/guides/systems/Buffi_BonusSet.png; Y=542+38-100; X=9]
+
+[Y=542+38+6-90;X=101]* Prin completarea cosmeticelor Buffi-ului veti primi un bonus suplimentar.
+[Y=558+38+6-90;X=101]* Echiparea completa a cosmeticelor va oferi +5 INT pentru Buffi-ul tau!
+[Y=574+38+6-90;X=101]* Costumele trebuie sa aibe acelasi sex ca si Buffi-ul.
+[Y=590+38+6-90;X=101]* Daca buffi-ul are toate abilitatile perfecte veti primi +5 INT pentru Buffi-ul tau!
+[Y=606+38+6-90;X=101]* Daca buffi-ul are abilitatile colorate veti primi +5 INT pentru Buffi-ul tau!
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Footer.png; Y=640-30; X=12]
+[scrollboardSize; height=640]
+
+
+
+
+
+
+
+
+
+
+
+
+
+

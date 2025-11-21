@@ -1,0 +1,165 @@
+
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/landing_page.png]
+[IMG=d:/ymir work/ui/wiki/special_elements/info_dung.png; Y=2; X=5]
+[IMG=d:/ymir work/ui/wiki/special_elements/chenar_main.png; Y=2; X=292]
+[model_render=2493; width=203; height=145; Y=24; X=336;]
+[IMG=d:/ymir work/ui/wiki/special_elements/drop_dungeon.png; Y=24; X=294]
+[IMG=d:/ymir work/ui/wiki/special_elements/arrow_right.png; Y=85; X=327]
+[X=110+15;Y=5]Informatii
+[X=380;Y=5]Boss Render
+[X=65-12;Y=34]Dragonul Albastru
+[X=188;Y=34]30m
+[X=260;Y=34]80
+[X=56-9;Y=82 ]Min. 13.400*
+[X=115-7;Y=82]Min. 12.100*
+[X=178-9;Y=82]Min. 13.000*
+[X=238-7;Y=82]Min. 14.500*
+[X=56;Y=119;COLOR=0x00FF00]-
+[X=115;Y=119;COLOR=0x00FF00]-
+[X=178;Y=119;COLOR=0x00FF00]-
+[X=238;Y=119;COLOR=0x00FF00]-
+[X=56;Y=151;COLOR=0xFFFF00]-
+[X=198;Y=151;COLOR=0xb6f7f7]Fulger
+[item_vnum=30179; Y=26; X=9]
+[item_vnum=189; Y=183; X=20; metinsocket=(28437, 28431, 0, 0); attrslot=((72, 45), (71, -14), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=11299; Y=210; X=57; metinsocket=(28438, 28440, 0, 0); attrslot=((1, 2000), (53, 50), (23, 10), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=12269; Y=177; X=58; attrslot=((7, 8), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=15089; Y=323; X=58; attrslot=((1, 2000), (15, 10), (7, 8), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=44799; Y=210; X=93; attrslot=((48, 1), (5, 12), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=44759; Y=246; X=90; attrslot=((1, 2000), (45, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=44779; Y=210; X=126; attrslot=((45, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=44769; Y=246; X=126; attrslot=((1, 2000), (15, 10), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=18009; Y=284; X=58;metinsocket=(0,0,0,0);]
+[item_vnum=79815; Y=202; X=209]
+[item_vnum=79903 ; Y=234; X=209]
+[item_vnum=79722; Y=202; X=170; attrslot=((53, 50), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=79723; Y=235; X=170; attrslot=((114, 8), (63, 8), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=79724; Y=271; X=170; attrslot=((114, 8), (63, 8), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=55405;X=298;Y=28]
+[item_vnum=49878;X=299;Y=62]
+[item_vnum=71129;X=299;Y=96]
+[item_vnum=54700;X=299;Y=130]
+[item_vnum=79900; Y=202; X=247]
+[item_vnum=79901; Y=234; X=247]
+[item_vnum=79902; Y=268; X=247]
+[item_vnum=10750; Y=323; X=209;attrslot=((0, 0), (0, 0), (106, 5), (0, 0), (0, 0), (0, 0), (0, 0))]
+
+
+[IMG=d:/ymir work/ui/wiki/special_elements/chenar_main_alchemy.png; Y=169; X=292]
+[item_vnum=40143; Y=202+13; X=315+67]
+[item_vnum=44782; Y=234+1; X=315+102]
+[item_vnum=44784; Y=202+1; X=315+102]
+[item_vnum=44781; Y=271+31; X=315+51]
+[item_vnum=44787; Y=271+31; X=315+86]
+[item_vnum=44788; Y=271+31; X=315+120]
+[item_vnum=125040; Y=202+4; X=315;metinsocket=(28437, 28431, 0, 0);attrslot=((53, 52), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=135040; Y=234+8; X=315;metinsocket=(28437, 28431, 0, 0);attrslot=((129, 3), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=145040; Y=271+8; X=315;metinsocket=(28437, 28431, 0, 0);attrslot=((115, 3), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=155040; Y=202+4; X=315+170;metinsocket=(28437, 28431, 0, 0);attrslot=((63, 4), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=165040; Y=234+8; X=315+170;metinsocket=(28437, 28431, 0, 0);attrslot=((72, 3), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=115040; Y=271+8; X=315+170;metinsocket=(28437, 28431, 0, 0);attrslot=((114, 3), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+20; X=-2]
+[Y=388+20; X=245]|BConsumabile|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+20; X=-2]
+[item_vnum=50821;X=10;Y=409+20]
+[item_vnum=50822;X=10+45;Y=409+20]
+[item_vnum=50823;X=10+90;Y=409+20]
+[item_vnum=50824;X=10+135;Y=409+20]
+[item_vnum=50825;X=10+180;Y=409+20]
+[item_vnum=44810;X=10+225;Y=409+20]
+[item_vnum=44812;X=10+270;Y=409+20]
+[item_vnum=44717;X=10+315;Y=409+20]
+[item_vnum=44718;X=10+350;Y=409+20]
+[item_vnum=44719;X=10+395;Y=409+20]
+[item_vnum=44720;X=10+440;Y=409+20]
+[item_vnum=44721;X=10+485;Y=409+20]
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+100; X=-2]
+[Y=388+100; X=225]|BSistemul de Abilitati|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+100; X=-2]
+[IMG=d:/ymir work/ui/wiki/skill/auraP.png; Y=409+100; X=30]
+[IMG=d:/ymir work/ui/wiki/skill/iuresP.png; Y=409+100; X=30+75]
+[IMG=d:/ymir work/ui/wiki/skill/taisP.png; Y=409+100; X=30+150]
+[IMG=d:/ymir work/ui/wiki/skill/armuraP.png; Y=409+100; X=30+225]
+[IMG=d:/ymir work/ui/wiki/skill/binecuvP.png; Y=409+100; X=30+300]
+[IMG=d:/ymir work/ui/wiki/skill/ajutorP.png; Y=409+100; X=30+375]
+[IMG=d:/ymir work/ui/wiki/skill/atacP.png; Y=409+100; X=30+450]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+180; X=-2]
+[Y=388+180; X=226]|BMisiunile Biologului|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+180; X=-2]
+[item_vnum=30006;item_count= 10; Y=409+180; X=75-15]
+[item_vnum=30047;item_count= 15; Y=409+180; X=150-15]
+[item_vnum=30015;item_count= 20; Y=409+180; X=235-15]
+[item_vnum=30050;item_count= 25; Y=409+180; X=300-15]
+[item_vnum=30165;item_count= 35; Y=409+180; X=375-15]
+[item_vnum=30166;item_count= 40; Y=409+180; X=375+60]
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Group36.png; Y=385+260; X=-2]
+[Y=388+260; X=236]|BAbilitati Pasive|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png; Y=405+260; X=-2]
+[IMG=d:/ymir work/ui/wiki/skill/conducere.png; Y=409+260; X=75+20]
+[IMG=d:/ymir work/ui/wiki/skill/inima_Dragonului.png; Y=409+260; X=150+20]
+[IMG=d:/ymir work/ui/wiki/skill/puterea_temnitei.png; Y=409+260; X=225+20]
+[IMG=d:/ymir work/ui/wiki/skill/puterea_dragonului.png; Y=409+260; X=300+20]
+[IMG=d:/ymir work/ui/wiki/skill/vanator.png; Y=409+260; X=376+20]
+
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Subtitle.png; Y=330+395; X=0]
+[Y=330+396; X=84;FONT_SIZE=18]|BStagiile temnitei|b
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=330+455; X=3]
+[Y=330+463; X=20; FONT_SIZE=20] Stagiul I
+[Y=330+497; X=17]* Invinge toti |Bmonstrii|b pentru a avansa!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=330+590; X=3]
+[Y=330+598; X=20; FONT_SIZE=20] Stagiul II
+[Y=330+632; X=17]* Distruge toate |Bpietrele metin|b pentru a avansa!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=330+725; X=3]
+[Y=330+733; X=20; FONT_SIZE=20] Stagiul III
+[Y=330+767; X=17]* Invinge |BVrajitoarea de gheata|b!
+[Y=330+767+15; X=17]* Dar fii atent! Ea scade cu 25% si are capcane pregatite pentru tine!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=330+860; X=3]
+[Y=330+868; X=20; FONT_SIZE=20] Capcana I
+[Y=330+902; X=17]* Distruge |Bpietra metin|b pentru a continua!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=330+995; X=3]
+[Y=330+1003; X=20; FONT_SIZE=20] Capcana II
+[Y=330+1037; X=17]* Invinge toti |Bmonstrii|b pentru a avansa!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=330+1130; X=3]
+[Y=330+1138; X=20; FONT_SIZE=20] Capcana III
+[Y=330+1172; X=17]* Distruge |Bpietra metin|b pentru a continua!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=330+1265; X=3]
+[Y=330+1273; X=20; FONT_SIZE=20] Stagiul IV
+[Y=330+1307; X=17]* Ai invins |BVrajitoarea de gheata|b!
+[Y=330+1307+15; X=17]* Invinge-l pe |BBeran-Setaou|b pentru a finaliza teminta!
+
+[scrollBoardSize; height=1710]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Header.png; Y=5; X=12]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=14+30]
+[Y=18+20; X=44+30; FONT_SIZE=18] |BGeneral|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=144+70]
+[Y=18+20; X=174+70; FONT_SIZE=18] |BTalisman|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=254+140]
+[Y=18+20; X=284+140; FONT_SIZE=18] |BBonus|b
+
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Subtitle.png; X=6;Y=80]
+[Y=75+8; X=78; FONT_SIZE=18] |BGeneral|b
+
+[IMG=d:/ymir work/ui/wiki/guides/systems/talisman.png; X=12;Y=100+30]
+[Y=120+20; X=110]* Vei putea echipa talismanele de la nivelul 80.
+[Y=120+35; X=110]* Exista 6 talismane diferite pentru fiecare element.
+[Y=120+50; X=110]* Pagina de Talismane va arata procentajul elementul, de asemenea plasand mouse-ul
+[Y=120+63; X=110] deasupra elementului activ puteti observa puterea elementara oferita de talismanul tau.
+[Y=120+80; X=110;max_width=370]* Talismanul este un obiect care creste daunele provocate monstrilor cu elementul corespunzator.
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Element.png; X=6;Y=72+170+15]
+[Y=75+187+15; X=122; FONT_SIZE=18] |BTalisman|b
+
+[Y=298+15; X=16]*Ramasita de Talisman pot fi obtinute de la lideri.
+[Y=298+15+15; X=16]*Ramasita de Talisman pot fi schimbate pe talismane la |cff2b6e0eUriel|r.
+[Y=298+30+15; X=16]*Talismanele pot fi imbunatatite pana la +25.
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Item3.png; X=430+7;Y=48+160+60+20]
+[item_vnum=44723; Y=60+8+160+60+20; X=443+15]
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Element.png; X=10;Y=174+190]
+[Y=194+190; X=132; FONT_SIZE=18] |BBonus|b
+
+[Y=122+190+32+55+14+7; X=30]*Obiectele pot fi achizitionate de la |cff2b6e0eUriel|r cu Ramasita de Talisman.
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy11.png; X=12+18;Y=256+190]
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy14.png; X=72+18;Y=256+190]
+[item_vnum=79782 ; Y = 255+190; X = 26+20]
+[Y=256+7+190; X=170] Adauga un bonus nou pe talisman, pana la 4 bonusuri.
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy11.png; X=12+18;Y=256+190+28]
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy14.png; X=72+18;Y=256+190+28]
+[item_vnum=79784 ; Y = 256+190+28 ; X = 26+20 ]
+[Y=256+28+7+190; X=215] Adauga al 5-lea bonus pe Talisman.
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy11.png; X=12+18;Y=256+190+28+28]
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Rectangle6copy14.png; X=72+18;Y=256+190+28+28]
+[item_vnum=79783 ; Y = 256+26+27+190 ; X = 26+20 ]
+[Y=256+190+28+28+7; X=170] Schimba bonusurile de pe talisman si adauga altele noi.
+
+
+[Y= 510+ 40  ; X = 30; FONT_SIZE=20]Lista de Bonusuri
+[Y= 510+ 40  + 20 ; X = 14] Exista 4 variatii de bonusuri, vor fi listate doar bonusurile maxime.
+[IMG=d:/ymir work/ui/wiki/guides/systems/talisman_bonus.png; Y=520+ 40  + 30; X=9]
+[Y = 520+ 40 + 30 ; X = 105]* Maxim PV |cffad8f49+2000|r
+[Y = 520+ 40 + 30 + 11; X = 105]* Maxim MP |cffad8f49+500 |r
+[Y = 520+ 40 + 30 + 22; X = 105]* Rezistenta Foc |cffad8f4915% |r
+[Y = 520+ 40 + 30 + 33; X = 105]* Rezistenta Fulger |cffad8f4915% |r
+[Y = 520+ 40 + 30 + 44; X = 105]* Rezistenta Vant |cffad8f4915% |r
+[Y = 520+ 40 + 30 + 55; X = 105]* Viteza de Atac |cffad8f49+8% |r
+[Y = 520+ 40 + 30 + 66; X = 105]* Viteza de Miscare |cffad8f4920% |r
+[Y = 520+ 40 + 30 + 77; X = 105]* Vulnerabil Sabie |cffad8f49+5% |r
+[Y = 520+ 40 + 30 + 88; X = 105]* Vulnerabil Doua Maini |cffad8f49+5% |r
+[Y = 520+ 40 + 30 + 99; X = 105]* Vulnerabil Pumnal |cffad8f49+5% |r
+[Y = 520+ 40 + 30 + 110; X = 105]* Vulnerabil Clopot |cffad8f49+5% |r
+[Y = 520+ 40 + 30 + 122; X = 105]* Vulnerabil Evantai |cffad8f49+5% |r
+[Y = 520+ 40 + 30 + 133; X = 105]* Vulnerabil Sageata |cffad8f49+5% |r
+[Y = 520+ 40 + 30 + 144; X = 105]* Puternic impotriva semi-oamenilor |cffad8f49+10% |r
+[Y = 520+ 40 + 30 + 155; X = 105]* Valoare Atac |cffad8f49+50 |r
+[Y = 520+ 40 + 30 + 166; X = 105]* Rezistenta Gheata |cffad8f49+15% |r
+[Y = 520+ 40 + 30 + 177; X = 105]* Rezistenta Pamant |cffad8f49+15% |r
+[Y = 520+ 40 + 30 + 188; X = 105]* Rezistenta Intuneric |cffad8f49+15% |r
+[Y = 520+ 40 + 30 + 199; X = 105]* Puternic impotriva Monstrilor |cffad8f49+10% |r
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Footer.png; Y=815; X=12]
+[scrollboardsize; height = 815+30]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

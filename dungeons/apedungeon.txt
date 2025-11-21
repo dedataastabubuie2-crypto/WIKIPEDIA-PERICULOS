@@ -1,0 +1,66 @@
+
+[BANNER_IMG = d:/ymir work/ui/wiki/banners/landing_page.png]
+[IMG=d:/ymir work/ui/wiki/special_elements/info_dung.png; Y=2; X=5]
+[IMG=d:/ymir work/ui/wiki/special_elements/chenar_main.png; Y=2; X=292]
+[model_render=5163; width=203; height=145; Y=24; X=336;]
+[IMG=d:/ymir work/ui/wiki/special_elements/drop_dungeon.png; Y=24; X=294]
+[IMG=d:/ymir work/ui/wiki/special_elements/arrow_right.png; Y=85; X=327]
+[X=110+15;Y=5]Informatii
+[X=400;Y=5]Boss Render
+[X=65-14;Y=34]Temnita Maimutelor
+[X=188;Y=34]15m
+[X=260;Y=34]40
+[X=56;Y=82]-
+[X=115;Y=82]-
+[X=178;Y=82]-
+[X=238;Y=82]-
+[X=56;Y=119;COLOR=0x00FF00]-
+[X=115;Y=119;COLOR=0x00FF00]-
+[X=178;Y=119;COLOR=0x00FF00]-
+[X=238;Y=119;COLOR=0x00FF00]-
+[X=56;Y=151;COLOR=0xFFFF00]Animale    
+[X=198;Y=151;COLOR=0xFF0000]Foc
+[item_vnum=71130; Y=26; X=9]
+[item_vnum=299; Y=183; X=22; attrslot=((72, 35), (72, -10), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=11209; Y=210; X=61; attrslot=((1, 1000), (53, 30), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=12209; Y=177; X=58; attrslot=((7, 5), (18, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=15009; Y=323; X=58; attrslot=((1, 1000), (15, 10), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=13009; Y=210; X=93; attrslot=((48, 1), (5, 8), (4, 8), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=14009; Y=246; X=90; attrslot=((1, 1000), (18, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=17009; Y=210; X=126; attrslot=((45, 10), (18, 20), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=16009; Y=246; X=126; attrslot=((1, 1000), (15, 10), (0, 0), (0, 0), (0, 0), (0, 0), (0, 0))]
+[item_vnum=43746; Y=202; X=209]
+[item_vnum=79754; Y=202; X=170]
+[item_vnum=79755; Y=235; X=170]
+[item_vnum=79756; Y=271; X=170]
+[item_vnum=55401;X=298;Y=28]
+[item_vnum=43841;X=299;Y=62]
+[item_vnum=79856;X=299;Y=96]
+[item_vnum=50926;X=299;Y=130]
+
+[IMG=d:/ymir work/ui/wiki/special_elements/chenar_main_alchemy.png; Y=169; X=292]
+[item_vnum=40143; Y=202+13; X=315+67]
+[item_vnum=44782; Y=234+1; X=315+102]
+[item_vnum=44784; Y=202+1; X=315+102]
+[item_vnum=44781; Y=271+31; X=315+51]
+[item_vnum=44787; Y=271+31; X=315+86]
+[item_vnum=44788; Y=271+31; X=315+120]
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Subtitle.png; Y=395; X=0]
+[Y=396; X=84;FONT_SIZE=18]|BStagiile temnitei|b
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=455; X=3]
+[Y=463; X=20; FONT_SIZE=20] Stagiul I
+
+[Y=497; X=17]* Invinge toti |Bmonstrii|b pentru a avansa!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=590; X=3]
+[Y=598; X=20; FONT_SIZE=20] Stagiul II
+[Y=632; X=17]* Distrunge toate cele 4 |Bpietre metin|b pentru a avansa!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=725; X=3]
+[Y=733; X=20; FONT_SIZE=20] Stagiul III
+[Y=767; X=17]* Distruge |BStatuia|b corecta pentru a avansa!
+[IMG=d:/ymir work/ui/wiki/rework_wiki/opener_3.png; Y=860; X=3]
+[Y=868; X=20; FONT_SIZE=20] Stagiul IV
+[Y=902; X=17]* Invinge |BMaimuta Lord|b pentru a finaliza temnita!
+
+[scrollBoardSize; height=970]

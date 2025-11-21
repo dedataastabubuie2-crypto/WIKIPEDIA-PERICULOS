@@ -1,0 +1,234 @@
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Header.png; Y=5; X=12]
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=14+15]
+[Y=18+20; X=44+15; FONT_SIZE=18] |BGeneral|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=144+20]
+[Y=18+20; X=174+20; FONT_SIZE=18] |BClasa|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=257+25]
+[Y=18+20; X=287+25; FONT_SIZE=18] |BClaritate|b
+[IMG=d:/ymir work/ui/wiki/rework_wiki/3.png; Y=13+30; X=399+20]
+[Y=18+20; X=429+20; FONT_SIZE=18] |BBonus|b
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Subtitle.png; X=6;Y=80]
+[Y=75+8; X=78; FONT_SIZE=18] |BGeneral|b
+
+[IMG=d:/ymir work/ui/wiki/guides/systems/alchemy.png; Y=125; X=9]
+[Y= 130 ; X = 106 ]*Exista 6 tipuri diferite de pietre de alchimie: Rubin, Jad, Safir, Granat, Onyx si Diamant.
+[Y= 130 +15; X = 106 ]*Cor Draconis (brut) se cumpara cu x10 Ciob Piatra Dragon de la magazinul Alchimist-ului.
+[Y= 130 + 30; X = 106 ]*Ciob Piatra Dragon pica de la Pietre Metin / Lideri. 
+[Y= 130 + 45; X = 106 ]*Dezechiparea unei piese de Piatra Dragon Mitica are o taxa de 50.000.000 Yang.
+[Y= 130 + 60; X = 106 ]*Folosind combinatia de taste |BCTRL+O|b puteti activa Roata de Alchimie sau |BCTRL+E|b
+[Y= 130 + 75; X = 106 ]pentru a activa Runtime System.
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Element.png; Y=258; X=3]
+[Y=258 + 20; X=132; FONT_SIZE=18] |BClasa|b
+[Y= 258 + 55; X = 20 ]*Accesul catre pagina de Rafinare se face de pe tasta O.
+[Y= 258 + 70; X = 20 ]*Rafinarea clasei este primul pas.
+[Y= 258 + 85; X = 20 ]*|cffdb6f1dAtentie: Rafinarea poate esua!|r
+[IMG=d:/ymir work/ui/wiki/rework_wiki/alchimie2.png; Y=315+50; X=5]
+[Y=317+50; X=34;FONT_SIZE=14] Brut
+[Y=317+50; X=30+90;FONT_SIZE=14] Taiat
+[Y=317+50; X=34+180;FONT_SIZE=14] Rar
+[Y=317+50; X=26+270;FONT_SIZE=14] Antic
+[Y=317+50; X=15+360;FONT_SIZE=14] Legendar
+[Y=317+50; X=23+450;FONT_SIZE=14] Mitic
+[item_vnum= 120000; Y = 305 + 31 + 50; X = 34]
+[item_vnum= 121000; Y = 305 + 31 + 50; X = 32+90]
+[item_vnum= 122000; Y = 305 + 31 + 50; X = 29+180]
+[item_vnum= 123000; Y = 305 + 31 + 50; X = 27+270]
+[item_vnum= 124000; Y = 305 + 31 + 50; X = 26+360]
+[item_vnum= 125000; Y = 305 + 31 + 50; X = 24+450]
+
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Element.png; Y=458-35; X=3]
+[Y=458 + 20 - 35; X=118; FONT_SIZE=18] |BClaritate|b
+[Y= 458 + 55 - 35; X = 20 ]*Accesul catre pagina de Rafinare se face de pe tasta O.
+[Y= 458 + 70 - 35; X = 20 ]*Rafinarea claritatii este al doilea pas.
+[Y= 458 + 85 - 35; X = 20 ]*|cffdb6f1dAtentie: Rafinarea poate esua!|r
+[IMG=d:/ymir work/ui/wiki/rework_wiki/alchimie.png; Y=517 + 20 - 5; X=5]
+[Y=517 + 15; X=30+10;FONT_SIZE=14] Opaca
+[Y=517 + 15; X=30+28+90;FONT_SIZE=14] Clara
+[Y=517 + 15; X=30+35+180;FONT_SIZE=14] Perfecta
+[Y=517 + 15; X=30+39+270;FONT_SIZE=14] Stralucitoare
+[Y=517 + 15; X=30+60+360;FONT_SIZE=14] Excelenta
+
+[item_vnum= 125000; Y = 505 + 3 + 45; X = 9+34]
+[item_vnum= 125100; Y = 505 + 3 + 45; X = 30+29+90]
+[item_vnum= 125200; Y = 505 + 3 + 45; X = 50+25+180]
+[item_vnum= 125300; Y = 505 + 3 + 45; X = 70+20+270]
+[item_vnum= 125400; Y = 505 + 3 + 45; X = 90+15+360]
+
+[Y = 545 + 3 + 55; X = 20]*Pentru a plusarea claritatii, exista 3 tipuri diferite de Fasole Dragon:
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle2.png; Y=594+25; X=9]
+[item_vnum= 100300; Y = 592+48; X = 4+20]
+[Y= 592+54; X = 70 ] Fasole Dragon Verde nu ofera nicio sansa in plus.
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle2.png; Y=594+25+60; X=9]
+[item_vnum= 100400; Y = 592+48+60; X = 4+20]
+[Y= 592+54+60; X = 70 ] Fasole Dragon Albastra ofera |B+5%|b sanse de reusita.
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle2.png; Y=594+25+120; X=9]
+[item_vnum= 100500; Y = 592+48+120; X = 4+20]
+[Y= 592+54+120; X = 70 ] Fasole Dragon Roz ofera |B+10%|b sanse de reusita.
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle2.png; Y=594+25+180; X=9]
+[item_vnum= 49871; Y = 592+48+180; X = 4+20]
+[Y= 592+54+180; X = 70 ] Fasole Dragon Legendara ofera |B+100%|b sanse de reusita.
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Element.png; Y=70+811; X=3]
+[Y=70+831; X=132; FONT_SIZE=18]|BBonus|b
+
+[Y=70+ 771+90 ; X= 20]*Doar Miticele Excelente+6 vor fi aratate. 
+[Y=70+ 771+15+90 ; X= 20]*Bonusul pentru alchimie se va afla intre |cffe6e628()|r.
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Item.png; Y=80+830+68; X=3]
+[item_vnum= 125400; Y = 80+ 830+83; X = 20]
+[Y=80+ 830+90 ; X= 128; FONT_SIZE=20] |BRubin|b
+[IMG=d:/ymir work/ui/wiki/guides/systems/ruby_alchemy.png; Y=80+875+90; X=9]
+[Y=80+875+90 +3; X = 105]* Putere |cffe6e628+15(+3)|r 
+[Y=80+875+90 +13+3; X = 105]* Rezistenta Foc |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+26+3; X = 105]* Putere Foc |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+39+3; X = 105]* Valoare Atac |cffe6e628+151(+31)|r  
+[Y=80+875+90+52+3; X = 105]* Puternic impotriva Razboinicilor. |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+65+3; X = 105]* Sansa de aparare impotriva atacului Razbonicilor |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+78+3; X = 105]* Valoare Atac Magic |cffe6e628+71(+15)|r 
+[Y=80+875+90+91+3; X = 105]* Aparare |cffe6e628+180(+36)|r 
+[Y=80+875+90+104+3; X = 105]* Tare impotriva animalelor |cffe6e628+8%(+2%)|r 
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Item.png; Y=80+830 + 68 + 200; X=3]
+[item_vnum= 155400; Y=80+ 830 + 83 + 200; X = 20]
+[Y=80+ 830 + 90 + 200 ; X= 128; FONT_SIZE=20] |BGranat|b
+ 
+[IMG=d:/ymir work/ui/wiki/guides/systems/garnet_alchemy.png; Y=80+875+90+200; X=9]
+[Y=80+875+90+3+200;X  = 105]* Max. PV |cffe6e628+1800(+360)|r
+[Y=80+875+90+13+3+200;X = 105]* Rezistenta la fulger |cffe6e628+10%(+2%)|r
+[Y=80+875+90+26+3+200;X = 105]* Putere fulger |cffe6e628+8%(+2%)|r
+[Y=80+875+90+39+3+200;X = 105]* Tare impotriva monstrilor |cffe6e628+10%(+2%)|r
+[Y=80+875+90+52+3+200;X = 105]* Daune absorbite de PV |cffe6e628+8%(+2%)|r
+[Y=80+875+90+65+3+200;X = 105]* Puternic impotriva Ninja |cffe6e628+10%(+2%)|r
+[Y=80+875+90+78+3+200;X = 105]* Sansa de aparare impotriva atacului ninja |cffe6e628+10%(+2%)|r
+[Y=80+875+90+91+3+200;X = 105]* Rezistenta medie la paguba |cffe6e628+8%(+2%)|r
+[Y=80+875+90+104+3+200; X = 105]* Sansa de a arunca de doua ori mai mult Yang |cffe6e628+10%(+2%)|r
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Item.png; Y=80+830 + 68 + 400; X=3]
+[item_vnum= 115400; Y=80+ 830 + 83 + 400; X = 20]
+[Y=80+ 830 + 90 + 400 ; X= 128; FONT_SIZE=20] |BDiamant|b
+
+[Y=80+ 1217+160+90 ; X= 9; FONT_SIZE=20]* |cffdb6f1d|BDiamant|b|r 
+[IMG=d:/ymir work/ui/wiki/guides/systems/dia_alchemy.png; Y=80+875+90+400; X=9]
+[Y=80+875+90+3+400; X = 105]* Inteligenta |cffe6e628+12(+3)|r
+[Y=80+875+90+13+3+400; X = 105]* Rezistenta la gheata |cffe6e628+10%(+2%)|r
+[Y=80+875+90+26+3+400; X = 105]* Putere gheata |cffe6e628+8%(+2%)|r
+[Y=80+875+90+39+3+400; X = 105]* Sansa de a bloca un atac corporal |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+52+3+400; X = 105]* Puternic impotriva semi-oamenilor |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+65+3+400; X = 105]* Rezistenta impotriva semi-oamenilor |cffe6e628+10%(+2%)|r
+[Y=80+875+90+78+3+400; X = 105]* Tare impotriva liderilor |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+91+3+400; X = 105]* Rezistenta impotriva liderilor |cffe6e628+8%(+2%)|r
+[Y=80+875+90+104+3+400; X = 105]* Tare impotriva diavolului |cffe6e628+8%(+2%)|r
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Item.png; Y=80+830 + 68 + 600; X=3]
+[item_vnum= 145400; Y=80+ 830 + 83 + 600; X = 20]
+[Y=80+ 830 + 90 + 600 ; X= 128; FONT_SIZE=20] |BSafir|b
+[IMG=d:/ymir work/ui/wiki/guides/systems/sap_alchemy.png; Y=80+875+90+600; X=9]
+[Y=80+875+90+104+3+600; X = 105]* Dexteritate |cffe6e628+12(+3)|r 
+[Y=80+875+90+91+3+600; X = 105]* Rezistenta la pamant |cffe6e628+10%(+2%)|r
+[Y=80+875+90+78+3+600; X = 105]* Putere pamant |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+65+3+600; X = 105]* Puternic impotriva Metinelor |cffe6e628+8%(+2%)|r
+[Y=80+875+90+52+3+600; X = 105]* Sansa de drop imbunatatita |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+39+3+600; X = 105]* Puternic impotriva samanilor |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+26+3+600; X = 105]* Sansa de aparare impotriva atacului samanilor |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+13+3+600; X = 105]* Aparare magica |cffe6e628+10(+2)|r 
+[Y=80+875+90+3+600;   X = 105]* Max. PV |cffe6e628+12%(+3%)|r 
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Item.png; Y=80+830 + 68 + 800; X=3]
+[item_vnum= 135400; Y=80+ 830 + 83 + 800; X = 20]
+[Y=80+ 830 + 90 + 800 ; X= 128; FONT_SIZE=20] |BJad|b
+[IMG=d:/ymir work/ui/wiki/guides/systems/jade_alchemy.png; Y=80+875+90+800; X=9]
+[Y=80+875+90+3+800;   X = 105]* Max. PV |cffe6e628+1800(+360)|r 
+[Y=80+875+90+13+3+800;X = 105]* Rezistenta la vant |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+26+3+800;X = 105]* Putere vant |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+39+3+800;X = 105]* Puterea in temnita |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+52+3+800;X = 105]* Rezistenta la Paguba Abilitatii |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+65+3+800;X = 105]* Puternic impotriva Sura |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+78+3+800;X = 105]* Sansa de aparare impotriva atacului Sura |cffe6e628+10%(+2%)|r 
+[Y=80+875+90+91+3+800;X = 105]* Tare impotriva orcilor |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+104+3+800;X = 105]* Puternic impotriva vampirilor |cffe6e628+8%(+2%)|r 
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Item.png; Y=80+830 + 68 + 1000; X=3]
+[item_vnum= 165400; Y=80+ 830 + 83 + 1000; X = 20]
+[Y=80+ 830 + 90 + 1000 ; X= 128; FONT_SIZE=20] |BOnyx|b
+[IMG=d:/ymir work/ui/wiki/guides/systems/onyx_alchemy.png; Y=80+875+90+1000; X=9]
+[Y=80+875+90+3+1000;   X = 105]* Vitalitate |cffe6e628+12(+3)|r
+[Y=80+875+90+13+3+1000;X = 105]* Rezistenta la intuneric |cffe6e628+10%(+2%)|r
+[Y=80+875+90+26+3+1000; X = 105]* Putere intuneric |cffe6e628+8%(+2%)|r
+[Y=80+875+90+39+3+1000; X = 105]* Rezistenta la lovitura critica |cffe6e628+12%(+3%)|r
+[Y=80+875+90+52+3+1000; X = 105]* Rezistenta la lovitura patrunzatoare |cffe6e628+12%(+3%)|r
+[Y=80+875+90+65+3+1000; X = 105]* Paguba medie |cffe6e628+8%(+2%)|r 
+[Y=80+875+90+78+3+1000; X = 105]* Sansa de a reflecta un atac corporal |cffe6e628+8%(+2%)|r
+[Y=80+875+90+91+3+1000; X = 105]* Paguba competentei |cffe6e628+8%(+2%)|r
+[Y=80+875+90+104+3+1000 ; X = 105]* Sansa de a evita atacurile cu sageti |cffe6e628+10%(+2%)|r
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle2.png; Y=80+875+90+104+3+1020; X=9]
+[item_vnum= 100001; Y=80+ 875+90+104+1+1040; X = 5+20]
+[Y=80+ 875+90+104+5+1040; X = 70 ]*Elixirul timpului iti va reincarca Piatra Dragon cu |B25%|b.
+[Y=80+ 875+90+104+5+1055; X = 70 ]*Poate fi cumparat de la |cff2b6e0eAlchimist|r cu Cor Draconis.
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle2.png; Y=80+875+90+104+3+1080; X=9]
+[item_vnum= 100002; Y=80+ 875+90+104+1+1100; X = 5+20]
+[Y=80+ 875+90+104+5+1100; X = 70 ]*Elixirul timpului iti va reincarca Piatra Dragon cu |B50%|b.
+[Y=80+ 875+90+104+5+1115; X = 70 ]*Poate fi cumparat de la |cff2b6e0eAlchimist|r cu Cor Draconis.
+
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/ItemCircle2.png; Y=80+875+90+104+3+1140; X=9]
+[item_vnum= 100701; Y=80+875+90+104+3+1160; X = 4+20]
+[Y=80+ 875+90+104+5+1160; X = 70 ]*Cu ajutorul Flacara Dragonului puteti sa va schimbati bonusul de pe Piatra Dragon.
+[Y=80+ 875+90+104+5+1175; X = 70 ]*Va fi nevoie de |Bx81|b Flacara Dragonului pentru a putea schimba bonusul.
+
+[IMG=d:/ymir work/ui/wiki/rework_wiki/Footer.png; Y=80+2391-100; X=12]
+
+[scrollboardSize; height=80+2421-100]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
