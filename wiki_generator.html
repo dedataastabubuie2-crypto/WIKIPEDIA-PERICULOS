@@ -1,0 +1,842 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metin2 Wiki Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 320px;
+            background: #2d3748;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fbbf24;
+            border-bottom: 2px solid #fbbf24;
+            padding-bottom: 10px;
+        }
+
+        .section {
+            background: #1a202c;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .section h3 {
+            margin-bottom: 12px;
+            color: #fbbf24;
+            font-size: 16px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn-success {
+            background: #10b981;
+        }
+
+        .btn-success:hover {
+            background: #059669;
+        }
+
+        .btn-danger {
+            background: #ef4444;
+        }
+
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #4a5568;
+            border-radius: 4px;
+            background: #374151;
+            color: white;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        label {
+            display: block;
+            margin-top: 8px;
+            font-size: 13px;
+            color: #cbd5e0;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .toolbar {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .toolbar button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .canvas {
+            background: white;
+            min-height: 800px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            position: relative;
+            padding: 20px;
+        }
+
+        .element {
+            position: absolute;
+            cursor: move;
+            padding: 5px;
+            border: 2px dashed transparent;
+            transition: all 0.2s;
+        }
+
+        .element:hover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .element.selected {
+            border-color: #fbbf24;
+            background: rgba(251, 191, 36, 0.1);
+        }
+
+        .element-controls {
+            position: absolute;
+            top: -25px;
+            right: 0;
+            display: none;
+            gap: 5px;
+        }
+
+        .element:hover .element-controls,
+        .element.selected .element-controls {
+            display: flex;
+        }
+
+        .element-controls button {
+            padding: 3px 8px;
+            font-size: 11px;
+            background: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #2d3748;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            color: white;
+        }
+
+        .modal-content h2 {
+            margin-bottom: 20px;
+            color: #fbbf24;
+        }
+
+        .close-modal {
+            float: right;
+            font-size: 28px;
+            cursor: pointer;
+            color: #cbd5e0;
+        }
+
+        .close-modal:hover {
+            color: #ef4444;
+        }
+
+        .item-icon {
+            width: 32px;
+            height: 32px;
+            background: #4a5568;
+            border: 1px solid #718096;
+            display: inline-block;
+            text-align: center;
+            line-height: 32px;
+            font-size: 10px;
+            color: white;
+        }
+
+        .output-box {
+            background: #1a202c;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 500px;
+            overflow-y: auto;
+            color: #cbd5e0;
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .template-card {
+            background: #374151;
+            padding: 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .template-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .template-card h4 {
+            color: #fbbf24;
+            margin-bottom: 5px;
+        }
+
+        .template-card p {
+            font-size: 12px;
+            color: #cbd5e0;
+        }
+
+        .coord-display {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2d3748;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>🎮 Wiki Generator</h1>
+
+        <div class="section">
+            <h3>📋 Template-uri</h3>
+            <div class="template-grid">
+                <div class="template-card" onclick="loadTemplate('dungeon')">
+                    <h4>Dungeon</h4>
+                    <p>Template complet pentru dungeons</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('boss')">
+                    <h4>Boss</h4>
+                    <p>Template pentru boss</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('system')">
+                    <h4>System</h4>
+                    <p>Pentru sisteme noi</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('blank')">
+                    <h4>Blank</h4>
+                    <p>Pagină goală</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>➕ Adaugă Element</h3>
+            <button class="btn" onclick="openModal('text')">📝 Text</button>
+            <button class="btn" onclick="openModal('item')">🎒 Item</button>
+            <button class="btn" onclick="openModal('image')">🖼️ Imagine</button>
+            <button class="btn" onclick="openModal('section')">📦 Secțiune</button>
+        </div>
+
+        <div class="section">
+            <h3>⚙️ Setări Canvas</h3>
+            <label>Înălțime Canvas:</label>
+            <input type="number" id="canvasHeight" value="800" onchange="updateCanvasHeight()">
+
+            <label>ScrollBoardSize:</label>
+            <input type="number" id="scrollBoardSize" value="1640">
+        </div>
+
+        <div class="section">
+            <h3>💾 Export</h3>
+            <button class="btn btn-success" onclick="generateCode()">📄 Generează Cod</button>
+            <button class="btn btn-success" onclick="downloadFile()">⬇️ Download .txt</button>
+            <button class="btn btn-danger" onclick="clearCanvas()">🗑️ Șterge Tot</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="toolbar">
+            <button style="background: #667eea; color: white;" onclick="generateCode()">Generează Preview</button>
+            <button style="background: #10b981; color: white;" onclick="downloadFile()">Download</button>
+            <button style="background: #6366f1; color: white;" onclick="saveProject()">Salvează Proiect</button>
+            <button style="background: #8b5cf6; color: white;" onclick="loadProject()">Încarcă Proiect</button>
+        </div>
+
+        <div class="canvas" id="canvas" onmousemove="showCoordinates(event)">
+            <!-- Elementele vor fi adăugate aici -->
+        </div>
+
+        <div class="output-box" id="outputBox" style="display:none;"></div>
+    </div>
+
+    <div class="coord-display" id="coordDisplay">X: 0, Y: 0</div>
+
+    <!-- Modal pentru Text -->
+    <div class="modal" id="modalText">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('text')">&times;</span>
+            <h2>Adaugă Text</h2>
+
+            <label>Text:</label>
+            <input type="text" id="textContent" placeholder="Scrie textul aici">
+
+            <label>X:</label>
+            <input type="number" id="textX" value="10">
+
+            <label>Y:</label>
+            <input type="number" id="textY" value="10">
+
+            <label>Font Size (opțional):</label>
+            <input type="number" id="textFontSize" placeholder="Ex: 18">
+
+            <label>Culoare (hex):</label>
+            <input type="text" id="textColor" placeholder="Ex: 0xFF0000">
+
+            <label>Bold:</label>
+            <select id="textBold">
+                <option value="">Normal</option>
+                <option value="|B">Bold</option>
+            </select>
+
+            <button class="btn btn-success" onclick="addText()">Adaugă</button>
+        </div>
+    </div>
+
+    <!-- Modal pentru Item -->
+    <div class="modal" id="modalItem">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('item')">&times;</span>
+            <h2>Adaugă Item</h2>
+
+            <label>Item Vnum:</label>
+            <input type="number" id="itemVnum" placeholder="Ex: 50821">
+
+            <label>X:</label>
+            <input type="number" id="itemX" value="10">
+
+            <label>Y:</label>
+            <input type="number" id="itemY" value="50">
+
+            <label>Count (opțional):</label>
+            <input type="number" id="itemCount" placeholder="Lasă gol pentru 1">
+
+            <label>Metinsockets (opțional):</label>
+            <input type="text" id="itemMetinsocket" placeholder="Ex: 28437, 28431, 0, 0">
+
+            <label>Attrslot (opțional):</label>
+            <textarea id="itemAttrslot" rows="3" placeholder="Ex: (72, 50), (71, -10), (0, 0)..."></textarea>
+
+            <button class="btn btn-success" onclick="addItem()">Adaugă</button>
+        </div>
+    </div>
+
+    <!-- Modal pentru Imagine -->
+    <div class="modal" id="modalImage">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('image')">&times;</span>
+            <h2>Adaugă Imagine</h2>
+
+            <label>Cale imagine:</label>
+            <input type="text" id="imagePath" placeholder="d:/ymir work/ui/wiki/...">
+
+            <label>X:</label>
+            <input type="number" id="imageX" value="10">
+
+            <label>Y:</label>
+            <input type="number" id="imageY" value="10">
+
+            <button class="btn btn-success" onclick="addImage()">Adaugă</button>
+        </div>
+    </div>
+
+    <!-- Modal pentru Secțiune -->
+    <div class="modal" id="modalSection">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('section')">&times;</span>
+            <h2>Adaugă Secțiune Predefinită</h2>
+
+            <label>Tip Secțiune:</label>
+            <select id="sectionType">
+                <option value="consumables">Consumabile</option>
+                <option value="abilities">Sistem de Abilități</option>
+                <option value="biologist">Misiuni Biolog</option>
+                <option value="passive">Abilități Pasive</option>
+                <option value="pet">Animal Companie</option>
+            </select>
+
+            <label>Y Start:</label>
+            <input type="number" id="sectionY" value="385">
+
+            <button class="btn btn-success" onclick="addSection()">Adaugă</button>
+        </div>
+    </div>
+
+    <script>
+        let elements = [];
+        let selectedElement = null;
+        let isDragging = false;
+        let dragOffset = { x: 0, y: 0 };
+
+        function openModal(type) {
+            document.getElementById('modal' + type.charAt(0).toUpperCase() + type.slice(1)).classList.add('active');
+        }
+
+        function closeModal(type) {
+            document.getElementById('modal' + type.charAt(0).toUpperCase() + type.slice(1)).classList.remove('active');
+        }
+
+        function addText() {
+            const text = document.getElementById('textContent').value;
+            const x = parseInt(document.getElementById('textX').value);
+            const y = parseInt(document.getElementById('textY').value);
+            const fontSize = document.getElementById('textFontSize').value;
+            const color = document.getElementById('textColor').value;
+            const bold = document.getElementById('textBold').value;
+
+            if (!text) {
+                alert('Adaugă text!');
+                return;
+            }
+
+            const element = {
+                type: 'text',
+                content: text,
+                x: x,
+                y: y,
+                fontSize: fontSize,
+                color: color,
+                bold: bold
+            };
+
+            elements.push(element);
+            renderCanvas();
+            closeModal('text');
+
+            // Reset form
+            document.getElementById('textContent').value = '';
+        }
+
+        function addItem() {
+            const vnum = parseInt(document.getElementById('itemVnum').value);
+            const x = parseInt(document.getElementById('itemX').value);
+            const y = parseInt(document.getElementById('itemY').value);
+            const count = document.getElementById('itemCount').value;
+            const metinsocket = document.getElementById('itemMetinsocket').value;
+            const attrslot = document.getElementById('itemAttrslot').value;
+
+            if (!vnum) {
+                alert('Adaugă item vnum!');
+                return;
+            }
+
+            const element = {
+                type: 'item',
+                vnum: vnum,
+                x: x,
+                y: y,
+                count: count,
+                metinsocket: metinsocket,
+                attrslot: attrslot
+            };
+
+            elements.push(element);
+            renderCanvas();
+            closeModal('item');
+        }
+
+        function addImage() {
+            const path = document.getElementById('imagePath').value;
+            const x = parseInt(document.getElementById('imageX').value);
+            const y = parseInt(document.getElementById('imageY').value);
+
+            if (!path) {
+                alert('Adaugă calea imaginii!');
+                return;
+            }
+
+            const element = {
+                type: 'image',
+                path: path,
+                x: x,
+                y: y
+            };
+
+            elements.push(element);
+            renderCanvas();
+            closeModal('image');
+        }
+
+        function addSection() {
+            const type = document.getElementById('sectionType').value;
+            const y = parseInt(document.getElementById('sectionY').value);
+
+            const sections = {
+                consumables: generateConsumablesSection(y),
+                abilities: generateAbilitiesSection(y),
+                biologist: generateBiologistSection(y),
+                passive: generatePassiveSection(y),
+                pet: generatePetSection(y)
+            };
+
+            elements.push(...sections[type]);
+            renderCanvas();
+            closeModal('section');
+        }
+
+        function generateConsumablesSection(startY) {
+            return [
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Group36.png', x: -2, y: startY},
+                {type: 'text', content: '|BConsumabile|b', x: 245, y: startY + 3, bold: ''},
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png', x: -2, y: startY + 20}
+            ];
+        }
+
+        function generateAbilitiesSection(startY) {
+            return [
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Group36.png', x: -2, y: startY},
+                {type: 'text', content: '|BSistemul de Abilitati|b', x: 225, y: startY + 3, bold: ''},
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png', x: -2, y: startY + 20}
+            ];
+        }
+
+        function generateBiologistSection(startY) {
+            return [
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Group36.png', x: -2, y: startY},
+                {type: 'text', content: '|BMisiunile Biologului|b', x: 226, y: startY + 3, bold: ''},
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png', x: -2, y: startY + 20}
+            ];
+        }
+
+        function generatePassiveSection(startY) {
+            return [
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Group36.png', x: -2, y: startY},
+                {type: 'text', content: '|BAbilitati Pasive|b', x: 236, y: startY + 3, bold: ''},
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png', x: -2, y: startY + 20}
+            ];
+        }
+
+        function generatePetSection(startY) {
+            return [
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Group36.png', x: -2, y: startY},
+                {type: 'text', content: '|BAnimal de Companie Tip 6 Lv. 99|b', x: 184, y: startY + 3, bold: ''},
+                {type: 'image', path: 'd:/ymir work/ui/wiki/rework_wiki/Rectangle6copy18.png', x: -2, y: startY + 20}
+            ];
+        }
+
+        function renderCanvas() {
+            const canvas = document.getElementById('canvas');
+            canvas.innerHTML = '';
+
+            elements.forEach((el, index) => {
+                const div = document.createElement('div');
+                div.className = 'element';
+                div.style.left = el.x + 'px';
+                div.style.top = el.y + 'px';
+                div.dataset.index = index;
+
+                let content = '';
+                if (el.type === 'text') {
+                    content = `<span style="${el.fontSize ? 'font-size:' + el.fontSize + 'px;' : ''} ${el.color ? 'color:#' + el.color.replace('0x', '') + ';' : ''} ${el.bold ? 'font-weight:bold;' : ''}">${el.content.replace('|B', '').replace('|b', '')}</span>`;
+                } else if (el.type === 'item') {
+                    content = `<div class="item-icon" title="Item ${el.vnum}">${el.vnum}</div>`;
+                } else if (el.type === 'image') {
+                    content = `<div style="width:100px;height:50px;background:#cbd5e0;border:1px solid #4a5568;font-size:10px;padding:5px;">IMG: ${el.path.split('/').pop()}</div>`;
+                }
+
+                div.innerHTML = content + `<div class="element-controls"><button onclick="deleteElement(${index})">✕</button></div>`;
+
+                div.addEventListener('mousedown', startDrag);
+                canvas.appendChild(div);
+            });
+        }
+
+        function startDrag(e) {
+            if (e.target.tagName === 'BUTTON') return;
+
+            isDragging = true;
+            selectedElement = e.currentTarget;
+            const rect = selectedElement.getBoundingClientRect();
+            const canvasRect = document.getElementById('canvas').getBoundingClientRect();
+
+            dragOffset.x = e.clientX - rect.left;
+            dragOffset.y = e.clientY - rect.top;
+
+            selectedElement.classList.add('selected');
+        }
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging || !selectedElement) return;
+
+            const canvas = document.getElementById('canvas');
+            const rect = canvas.getBoundingClientRect();
+
+            let x = e.clientX - rect.left - dragOffset.x;
+            let y = e.clientY - rect.top - dragOffset.y;
+
+            x = Math.max(0, Math.min(x, rect.width - selectedElement.offsetWidth));
+            y = Math.max(0, Math.min(y, rect.height - selectedElement.offsetHeight));
+
+            selectedElement.style.left = x + 'px';
+            selectedElement.style.top = y + 'px';
+
+            const index = parseInt(selectedElement.dataset.index);
+            elements[index].x = Math.round(x);
+            elements[index].y = Math.round(y);
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (selectedElement) {
+                selectedElement.classList.remove('selected');
+            }
+            isDragging = false;
+            selectedElement = null;
+        });
+
+        function deleteElement(index) {
+            elements.splice(index, 1);
+            renderCanvas();
+        }
+
+        function showCoordinates(e) {
+            const canvas = document.getElementById('canvas');
+            const rect = canvas.getBoundingClientRect();
+            const x = Math.round(e.clientX - rect.left);
+            const y = Math.round(e.clientY - rect.top);
+            document.getElementById('coordDisplay').textContent = `X: ${x}, Y: ${y}`;
+        }
+
+        function generateCode() {
+            let code = '';
+
+            // Sort by Y then X for better readability
+            const sorted = [...elements].sort((a, b) => {
+                if (a.y === b.y) return a.x - b.x;
+                return a.y - b.y;
+            });
+
+            sorted.forEach(el => {
+                if (el.type === 'text') {
+                    let line = '';
+                    if (el.fontSize) line += `[FONT_SIZE=${el.fontSize}]`;
+                    if (el.color) line += `[COLOR=${el.color}]`;
+                    line += `[X=${el.x};Y=${el.y}]`;
+                    if (el.bold) line += el.bold;
+                    line += el.content;
+                    if (el.bold) line += el.bold.toLowerCase();
+                    code += line + '\n';
+                } else if (el.type === 'item') {
+                    let line = `[item_vnum=${el.vnum}`;
+                    if (el.count) line += `; item_count=${el.count}`;
+                    if (el.metinsocket) line += `; metinsocket=(${el.metinsocket})`;
+                    if (el.attrslot) line += `; attrslot=(${el.attrslot})`;
+                    line += `; Y=${el.y}; X=${el.x}]`;
+                    code += line + '\n';
+                } else if (el.type === 'image') {
+                    code += `[IMG=${el.path}; Y=${el.y}; X=${el.x}]\n`;
+                }
+            });
+
+            const scrollSize = document.getElementById('scrollBoardSize').value;
+            code += `[scrollBoardSize; height=${scrollSize}]\n`;
+
+            document.getElementById('outputBox').style.display = 'block';
+            document.getElementById('outputBox').textContent = code;
+
+            return code;
+        }
+
+        function downloadFile() {
+            const code = generateCode();
+            const blob = new Blob([code], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'wiki_page.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function clearCanvas() {
+            if (confirm('Sigur vrei să ștergi tot?')) {
+                elements = [];
+                renderCanvas();
+                document.getElementById('outputBox').style.display = 'none';
+            }
+        }
+
+        function updateCanvasHeight() {
+            const height = document.getElementById('canvasHeight').value;
+            document.getElementById('canvas').style.minHeight = height + 'px';
+        }
+
+        function saveProject() {
+            const project = {
+                elements: elements,
+                canvasHeight: document.getElementById('canvasHeight').value,
+                scrollBoardSize: document.getElementById('scrollBoardSize').value
+            };
+
+            const json = JSON.stringify(project, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'wiki_project.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function loadProject() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            input.onchange = (e) => {
+                const file = e.target.files[0];
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    try {
+                        const project = JSON.parse(event.target.result);
+                        elements = project.elements || [];
+                        document.getElementById('canvasHeight').value = project.canvasHeight || 800;
+                        document.getElementById('scrollBoardSize').value = project.scrollBoardSize || 1640;
+                        updateCanvasHeight();
+                        renderCanvas();
+                    } catch (err) {
+                        alert('Eroare la încărcarea proiectului!');
+                    }
+                };
+                reader.readAsText(file);
+            };
+            input.click();
+        }
+
+        function loadTemplate(type) {
+            if (!confirm('Ștergi conținutul actual și încarci template-ul?')) return;
+
+            elements = [];
+
+            if (type === 'dungeon') {
+                // Template dungeon complet
+                elements.push(
+                    {type: 'image', path: 'd:/ymir work/ui/wiki/banners/landing_page.png', x: 0, y: 0},
+                    {type: 'image', path: 'd:/ymir work/ui/wiki/special_elements/info_dung.png', x: 5, y: 2},
+                    {type: 'image', path: 'd:/ymir work/ui/wiki/special_elements/chenar_main.png', x: 292, y: 2},
+                    {type: 'text', content: 'Informatii', x: 125, y: 5},
+                    {type: 'text', content: 'Nume Dungeon', x: 47, y: 34},
+                    {type: 'text', content: '1h', x: 188, y: 34},
+                    {type: 'text', content: '95', x: 260, y: 34}
+                );
+                document.getElementById('scrollBoardSize').value = '1640';
+            } else if (type === 'boss') {
+                elements.push(
+                    {type: 'text', content: '|BNume Boss|b', x: 250, y: 20, fontSize: 20},
+                    {type: 'text', content: 'Level: 120', x: 250, y: 50}
+                );
+            }
+
+            renderCanvas();
+        }
+
+        // Initial render
+        renderCanvas();
+    </script>
+</body>
+</html>
